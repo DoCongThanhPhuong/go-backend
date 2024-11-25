@@ -6,6 +6,6 @@ import (
 
 func main() {
   r := routers.NewRouter()
-  r.Run()
+  r.Run(":8002")
 }
 

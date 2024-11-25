@@ -26,6 +26,7 @@ func getEncoderLog() zapcore.Encoder {
 }
 
 func getWriterSync() zapcore.WriteSyncer {
+	os.MkdirAll("./log", os.ModePerm)
 	file, _ := os.OpenFile("./logs/log.txt", os.O_CREATE|os.O_WRONLY, os.ModePerm)
 	syncFile := zapcore.AddSync(file)
 	syncConsole := zapcore.AddSync(os.Stderr)
