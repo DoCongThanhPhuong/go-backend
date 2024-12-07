@@ -1,22 +1,11 @@
 server:
   port: 8002
-database:
-  - user: admin
-    password: admin
-    host: localhost
-    dbName: db
-  - user: root
-    password: root
-    host: localhost
-    dbName: order
-sercurity:
-  jwt:
-    key: docongthanhphuong
-redis:
-  user: admin
-elasticsearch:
-  user: admin
-rabbitMQ:
-  user: admin
-kafka:
-  user: admin
+mysql:
+  host: 127.0.0.1
+  port: 3306
+  username: root
+  password: 123456
+  dbname: go_backend
+  maxIdleConns: 10
+  maxOpenConns: 100
+  connMaxLifetime: 3600
