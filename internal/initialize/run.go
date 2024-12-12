@@ -4,7 +4,7 @@ func Run() {
 	LoadConfig()
 	InitLogger()
 	// global.Logger.Info("CONFIG_LOG_SUCCESS", zap.String("OK", "SUCCESS"))
-	InitMySQL()
+	InitMysql()
 	InitRedis()
 
 	r := InitRouter()
