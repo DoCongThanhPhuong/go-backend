@@ -1,2 +1,4 @@
 {"level":"INFO","time":"2024-12-08T19:37:02.254+0700","caller":"initialize/run.go:11","msg":"CONFIG_LOG_SUCCESS","OK":"SUCCESS"}
 {"level":"INFO","time":"2024-12-12T16:40:34.417+0700","caller":"initialize/mysql.go:32","msg":"MySQL Initialized successfully"}
+{"level":"INFO","time":"2024-12-21T22:10:45.402+0700","caller":"initialize/mysql.go:32","msg":"MySQL Initialized successfully"}
+{"level":"INFO","time":"2024-12-21T22:10:45.436+0700","caller":"initialize/redis.go:46","msg":"GET_SCORE_SUCCESS","score":"100"}
