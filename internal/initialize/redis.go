@@ -27,21 +27,21 @@ func InitRedis() {
 
 	fmt.Println("Redis is now connected")
 	global.Rdb = rdb
-	redisExample()
+	// redisExample()
 }
 
-func redisExample() {
-	err := global.Rdb.Set(ctx, "score", 100, 0).Err()
-	if err!= nil {
-    fmt.Println("COMMON:SET_CORE_FAILED", zap.Error(err))
-		return
-  }
+// func redisExample() {
+// 	err := global.Rdb.Set(ctx, "score", 100, 0).Err()
+// 	if err!= nil {
+//     fmt.Println("COMMON:SET_CORE_FAILED", zap.Error(err))
+// 		return
+//   }
 
-	value, err := global.Rdb.Get(ctx, "score").Result()
-	if err!= nil {
-    fmt.Println("COMMON:GET_CORE_FAILED", zap.Error(err))
-		return
-  }
+// 	value, err := global.Rdb.Get(ctx, "score").Result()
+// 	if err!= nil {
+//     fmt.Println("COMMON:GET_CORE_FAILED", zap.Error(err))
+// 		return
+//   }
 
-	global.Logger.Info("GET_SCORE_SUCCESS", zap.String("score", value))
-}
+// 	global.Logger.Info("GET_SCORE_SUCCESS", zap.String("score", value))
+// }
